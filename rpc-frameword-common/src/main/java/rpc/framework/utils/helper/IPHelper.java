@@ -19,7 +19,7 @@ public class IPHelper {
 
     /**
      * 通过 获取系统所有的networkInterface网络接口 然后遍历 每个网络下的InterfaceAddress组。
-     * 获得符合 <code>InetAddress instanceof Inet4Address</code> 条件的一个IpV4地址
+     * 获得符合条件的一个IpV4地址
      * @return 获取本机Ip
      */
     public static String localIp() {
