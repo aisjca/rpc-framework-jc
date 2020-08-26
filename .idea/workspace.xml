@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22edc2d8-ba65-4bf0-94d0-3858c2d39e19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-frameword-common/src/main/java/rpc/framework/utils/helper/IPHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-frameword-common/src/main/java/rpc/framework/utils/helper/IPHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-framework-core/src/test/java/rpc/framework/test/BufferSlice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-framework-core/src/test/java/rpc/framework/test/IntBufferDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-framework-core/src/test/java/rpc/framework/test/RecyclerDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-frameword-common/src/main/java/rpc/framework/enumeration/RpcErrorMessageEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-frameword-common/src/main/java/rpc/framework/enumeration/RpcErrorMessageEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework-core/src/main/java/rpc/framework/proxy/RpcClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework-core/src/main/java/rpc/framework/proxy/RpcClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework-core/src/main/java/rpc/framework/remoting/transport/socket/SocketRpcClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework-core/src/main/java/rpc/framework/remoting/transport/socket/SocketRpcRequestHandlerRunnable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework-core/src/main/java/rpc/framework/remoting/transport/socket/SocketRpcServer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <recent name="$PROJECT_DIR$/rpc-framework-core/src/main/java/rpc/framework/serialize" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IPHelper">
+  <component name="RunManager" selected="Application.NettyClientMain">
     <configuration name="BufferSlice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="rpc.framework.test.BufferSlice" />
       <module name="rpc-framework-core" />
@@ -133,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecyclerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="rpc.framework.test.RecyclerDemo" />
+    <configuration name="NettyServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rpc.framework.server.NettyServerMain" />
       <module name="rpc-framework-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rpc.framework.test.*" />
+          <option name="PATTERN" value="rpc.framework.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NettyClientMain" />
+        <item itemvalue="Application.NettyServerMain" />
         <item itemvalue="Application.IPHelper" />
         <item itemvalue="Application.BufferSlice" />
         <item itemvalue="Application.IntBufferDemo" />
-        <item itemvalue="Application.RecyclerDemo" />
-        <item itemvalue="Application.NettyClientMain" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +196,8 @@
       <workItem from="1597369803702" duration="3079000" />
       <workItem from="1597539796973" duration="1905000" />
       <workItem from="1598430980893" duration="1924000" />
-      <workItem from="1598450893479" duration="2173000" />
+      <workItem from="1598450893479" duration="2570000" />
+      <workItem from="1598454543846" duration="523000" />
     </task>
     <servers />
   </component>
@@ -232,71 +233,71 @@
       <screen x="0" y="23" width="1792" height="1041" />
     </state>
     <state width="540" height="466" key="DebuggerActiveHint/0.23.1792.1041@0.23.1792.1041" timestamp="1596619223022" />
-    <state width="1209" height="334" key="GridCell.Tab.0.bottom" timestamp="1598452416110">
-      <screen x="0" y="23" width="1792" height="1041" />
+    <state width="1209" height="258" key="GridCell.Tab.0.bottom" timestamp="1598456028709">
+      <screen x="0" y="23" width="1792" height="1037" />
     </state>
     <state width="1209" height="334" key="GridCell.Tab.0.bottom/0.23.1792.1034@0.23.1792.1034" timestamp="1597164033508" />
-    <state width="1149" height="319" key="GridCell.Tab.0.bottom/0.23.1792.1036@0.23.1792.1036" timestamp="1596558604523" />
-    <state width="1149" height="258" key="GridCell.Tab.0.bottom/0.23.1792.1037@0.23.1792.1037" timestamp="1596632570482" />
+    <state width="1209" height="334" key="GridCell.Tab.0.bottom/0.23.1792.1036@0.23.1792.1036" timestamp="1598453524671" />
+    <state width="1209" height="258" key="GridCell.Tab.0.bottom/0.23.1792.1037@0.23.1792.1037" timestamp="1598456028709" />
     <state width="1209" height="334" key="GridCell.Tab.0.bottom/0.23.1792.1041@0.23.1792.1041" timestamp="1598452416110" />
     <state width="1209" height="334" key="GridCell.Tab.0.bottom/0.23.1792.1042@0.23.1792.1042" timestamp="1597547790108" />
     <state width="1209" height="258" key="GridCell.Tab.0.bottom/0.23.1792.1043@0.23.1792.1043" timestamp="1598437870440" />
-    <state width="1209" height="334" key="GridCell.Tab.0.center" timestamp="1598452416110">
-      <screen x="0" y="23" width="1792" height="1041" />
+    <state width="1209" height="258" key="GridCell.Tab.0.center" timestamp="1598456028709">
+      <screen x="0" y="23" width="1792" height="1037" />
     </state>
     <state width="1209" height="334" key="GridCell.Tab.0.center/0.23.1792.1034@0.23.1792.1034" timestamp="1597164033508" />
-    <state width="1149" height="319" key="GridCell.Tab.0.center/0.23.1792.1036@0.23.1792.1036" timestamp="1596558604522" />
-    <state width="1149" height="258" key="GridCell.Tab.0.center/0.23.1792.1037@0.23.1792.1037" timestamp="1596632570481" />
+    <state width="1209" height="334" key="GridCell.Tab.0.center/0.23.1792.1036@0.23.1792.1036" timestamp="1598453524671" />
+    <state width="1209" height="258" key="GridCell.Tab.0.center/0.23.1792.1037@0.23.1792.1037" timestamp="1598456028709" />
     <state width="1209" height="334" key="GridCell.Tab.0.center/0.23.1792.1041@0.23.1792.1041" timestamp="1598452416110" />
     <state width="1209" height="334" key="GridCell.Tab.0.center/0.23.1792.1042@0.23.1792.1042" timestamp="1597547790107" />
     <state width="1209" height="258" key="GridCell.Tab.0.center/0.23.1792.1043@0.23.1792.1043" timestamp="1598437870440" />
-    <state width="1209" height="334" key="GridCell.Tab.0.left" timestamp="1598452416109">
-      <screen x="0" y="23" width="1792" height="1041" />
+    <state width="1209" height="258" key="GridCell.Tab.0.left" timestamp="1598456028708">
+      <screen x="0" y="23" width="1792" height="1037" />
     </state>
     <state width="1209" height="334" key="GridCell.Tab.0.left/0.23.1792.1034@0.23.1792.1034" timestamp="1597164033507" />
-    <state width="1149" height="319" key="GridCell.Tab.0.left/0.23.1792.1036@0.23.1792.1036" timestamp="1596558604522" />
-    <state width="1149" height="258" key="GridCell.Tab.0.left/0.23.1792.1037@0.23.1792.1037" timestamp="1596632570481" />
+    <state width="1209" height="334" key="GridCell.Tab.0.left/0.23.1792.1036@0.23.1792.1036" timestamp="1598453524671" />
+    <state width="1209" height="258" key="GridCell.Tab.0.left/0.23.1792.1037@0.23.1792.1037" timestamp="1598456028708" />
     <state width="1209" height="334" key="GridCell.Tab.0.left/0.23.1792.1041@0.23.1792.1041" timestamp="1598452416109" />
     <state width="1209" height="334" key="GridCell.Tab.0.left/0.23.1792.1042@0.23.1792.1042" timestamp="1597547790107" />
     <state width="1209" height="258" key="GridCell.Tab.0.left/0.23.1792.1043@0.23.1792.1043" timestamp="1598437870439" />
-    <state width="1209" height="334" key="GridCell.Tab.0.right" timestamp="1598452416110">
-      <screen x="0" y="23" width="1792" height="1041" />
+    <state width="1209" height="258" key="GridCell.Tab.0.right" timestamp="1598456028709">
+      <screen x="0" y="23" width="1792" height="1037" />
     </state>
     <state width="1209" height="334" key="GridCell.Tab.0.right/0.23.1792.1034@0.23.1792.1034" timestamp="1597164033508" />
-    <state width="1149" height="319" key="GridCell.Tab.0.right/0.23.1792.1036@0.23.1792.1036" timestamp="1596558604522" />
-    <state width="1149" height="258" key="GridCell.Tab.0.right/0.23.1792.1037@0.23.1792.1037" timestamp="1596632570481" />
+    <state width="1209" height="334" key="GridCell.Tab.0.right/0.23.1792.1036@0.23.1792.1036" timestamp="1598453524671" />
+    <state width="1209" height="258" key="GridCell.Tab.0.right/0.23.1792.1037@0.23.1792.1037" timestamp="1598456028709" />
     <state width="1209" height="334" key="GridCell.Tab.0.right/0.23.1792.1041@0.23.1792.1041" timestamp="1598452416110" />
     <state width="1209" height="334" key="GridCell.Tab.0.right/0.23.1792.1042@0.23.1792.1042" timestamp="1597547790108" />
     <state width="1209" height="258" key="GridCell.Tab.0.right/0.23.1792.1043@0.23.1792.1043" timestamp="1598437870440" />
-    <state width="1209" height="334" key="GridCell.Tab.1.bottom" timestamp="1598452328180">
-      <screen x="0" y="23" width="1792" height="1041" />
+    <state width="1209" height="334" key="GridCell.Tab.1.bottom" timestamp="1598453524672">
+      <screen x="0" y="23" width="1792" height="1036" />
     </state>
     <state width="1209" height="334" key="GridCell.Tab.1.bottom/0.23.1792.1034@0.23.1792.1034" timestamp="1597164033509" />
-    <state width="1149" height="319" key="GridCell.Tab.1.bottom/0.23.1792.1036@0.23.1792.1036" timestamp="1596558604523" />
+    <state width="1209" height="334" key="GridCell.Tab.1.bottom/0.23.1792.1036@0.23.1792.1036" timestamp="1598453524672" />
     <state width="1149" height="319" key="GridCell.Tab.1.bottom/0.23.1792.1037@0.23.1792.1037" timestamp="1596632570476" />
     <state width="1209" height="334" key="GridCell.Tab.1.bottom/0.23.1792.1041@0.23.1792.1041" timestamp="1598452328180" />
     <state width="1209" height="334" key="GridCell.Tab.1.bottom/0.23.1792.1042@0.23.1792.1042" timestamp="1597547790108" />
-    <state width="1209" height="334" key="GridCell.Tab.1.center" timestamp="1598452328179">
-      <screen x="0" y="23" width="1792" height="1041" />
+    <state width="1209" height="334" key="GridCell.Tab.1.center" timestamp="1598453524672">
+      <screen x="0" y="23" width="1792" height="1036" />
     </state>
     <state width="1209" height="334" key="GridCell.Tab.1.center/0.23.1792.1034@0.23.1792.1034" timestamp="1597164033508" />
-    <state width="1149" height="319" key="GridCell.Tab.1.center/0.23.1792.1036@0.23.1792.1036" timestamp="1596558604523" />
+    <state width="1209" height="334" key="GridCell.Tab.1.center/0.23.1792.1036@0.23.1792.1036" timestamp="1598453524672" />
     <state width="1149" height="319" key="GridCell.Tab.1.center/0.23.1792.1037@0.23.1792.1037" timestamp="1596632570476" />
     <state width="1209" height="334" key="GridCell.Tab.1.center/0.23.1792.1041@0.23.1792.1041" timestamp="1598452328179" />
     <state width="1209" height="334" key="GridCell.Tab.1.center/0.23.1792.1042@0.23.1792.1042" timestamp="1597547790108" />
-    <state width="1209" height="334" key="GridCell.Tab.1.left" timestamp="1598452328179">
-      <screen x="0" y="23" width="1792" height="1041" />
+    <state width="1209" height="334" key="GridCell.Tab.1.left" timestamp="1598453524671">
+      <screen x="0" y="23" width="1792" height="1036" />
     </state>
     <state width="1209" height="334" key="GridCell.Tab.1.left/0.23.1792.1034@0.23.1792.1034" timestamp="1597164033508" />
-    <state width="1149" height="319" key="GridCell.Tab.1.left/0.23.1792.1036@0.23.1792.1036" timestamp="1596558604523" />
+    <state width="1209" height="334" key="GridCell.Tab.1.left/0.23.1792.1036@0.23.1792.1036" timestamp="1598453524671" />
     <state width="1149" height="319" key="GridCell.Tab.1.left/0.23.1792.1037@0.23.1792.1037" timestamp="1596632570476" />
     <state width="1209" height="334" key="GridCell.Tab.1.left/0.23.1792.1041@0.23.1792.1041" timestamp="1598452328179" />
     <state width="1209" height="334" key="GridCell.Tab.1.left/0.23.1792.1042@0.23.1792.1042" timestamp="1597547790108" />
-    <state width="1209" height="334" key="GridCell.Tab.1.right" timestamp="1598452328179">
-      <screen x="0" y="23" width="1792" height="1041" />
+    <state width="1209" height="334" key="GridCell.Tab.1.right" timestamp="1598453524672">
+      <screen x="0" y="23" width="1792" height="1036" />
     </state>
     <state width="1209" height="334" key="GridCell.Tab.1.right/0.23.1792.1034@0.23.1792.1034" timestamp="1597164033509" />
-    <state width="1149" height="319" key="GridCell.Tab.1.right/0.23.1792.1036@0.23.1792.1036" timestamp="1596558604523" />
+    <state width="1209" height="334" key="GridCell.Tab.1.right/0.23.1792.1036@0.23.1792.1036" timestamp="1598453524672" />
     <state width="1149" height="319" key="GridCell.Tab.1.right/0.23.1792.1037@0.23.1792.1037" timestamp="1596632570476" />
     <state width="1209" height="334" key="GridCell.Tab.1.right/0.23.1792.1041@0.23.1792.1041" timestamp="1598452328179" />
     <state width="1209" height="334" key="GridCell.Tab.1.right/0.23.1792.1042@0.23.1792.1042" timestamp="1597547790108" />
@@ -340,7 +341,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rpc-framework-core/src/main/java/rpc/framework/proxy/RpcClientProxy.java</url>
-          <line>59</line>
+          <line>60</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

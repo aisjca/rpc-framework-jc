@@ -2,12 +2,13 @@ package rpc.framework.proxy;
 
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import rpc.framework.enumeration.RpcErrorMessageEnum;
+import rpc.framework.exception.RpcException;
 import rpc.framework.remoting.dto.RpcMessageChecker;
 import rpc.framework.remoting.dto.RpcRequest;
 import rpc.framework.remoting.dto.RpcResponse;
 import rpc.framework.remoting.transport.ClientTransport;
 import rpc.framework.remoting.transport.netty.client.NettyClientTransport;
-import rpc.framework.remoting.transport.socket.SocketRpcClient;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -68,9 +69,8 @@ public class RpcClientProxy implements InvocationHandler {
         if (clientTransport instanceof NettyClientTransport) {
             CompletableFuture<RpcResponse> completableFuture = ((NettyClientTransport) clientTransport).sendRpcRequest(rpcRequest);
             rpcResponse = completableFuture.get();
-        }
-        if (clientTransport instanceof SocketRpcClient) {
-            rpcResponse = (RpcResponse) clientTransport.sendRpcRequest(rpcRequest);
+        } else {
+            throw new RpcException(RpcErrorMessageEnum.ClientTransport_NOT_EXIST, "没有这个clientTransport");
         }
         RpcMessageChecker.check(rpcResponse, rpcRequest);
         return rpcResponse.getData();
